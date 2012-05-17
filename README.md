@@ -4,6 +4,17 @@ NLP-CCG
 Really liked the NLP lecture on CCG. Implemented each word in Haskell so if you write a sentence with those words you end up with a sentence program, which when run gives you all the relationships between the words in the sentence.
 
 
+    t0 = ((_John `_eat`) `_and` (_Mary `_eat`)) (_red _apple)
+    t1 = ((_John `_eat`) `_and` (_Mary `_drink`)) ((_red _apple) `_and` _water)
+    t2 = ((_I `_like`) `_and` (_Mary `_hates`)) _apples
+    t3 = (_Yahoo `_bought` _IBM) `_but` (_Microsoft `_sold` _Apple)
+    t4 = _John `_said` (_Mary `_bought` _apples)
+    t5 = _John `_said` (_Steve `_said` (_Mary `_bought` _apples))
+    t6 = _John `_ate` (_pizza `_with` _apples)
+    t7 =_John \\ ((`_ate` _pizza) `_with` ((_a _fork) `_and` (_a _water)))
+    t8 = (_John `_ate` _pizza) `_with` (_Mary `_and` _Steve)
+
+
     $ ghci
     GHCi, version 7.0.3: http://www.haskell.org/ghc/  :? for help
     Loading package ghc-prim ... linking ... done.
